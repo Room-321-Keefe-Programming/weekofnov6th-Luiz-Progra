@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -131,5 +132,28 @@ namespace WeekOfNov6th
             }
 
         }
+
+        private void btnBCT_Click(object sender, EventArgs e)
+        {
+            string file = "C:\\Users\\luizo\\2026Works\\Week 6th November\\Week 6th November\\bin\\test.txt";
+            string intoFile = File.ReadAllText(file);
+            string[] thingy = intoFile.Split(' ');
+            string onpit = txtInput1.Text + txtInput2.Text;
+            int inputOnpit = int.Parse(onpit);
+
+            if (txtInput2.Text != "")
+            {
+                for (int i = 0; i < thingy.Length; i += inputOnpit)
+                {
+                    rtbOutput.Text += thingy[i] + " ";
+                }
+            }
+            else
+            {
+                rtbOutput.Text = "please type something on the box 2. \n";
+            }
+
+        }
+
     }
 }

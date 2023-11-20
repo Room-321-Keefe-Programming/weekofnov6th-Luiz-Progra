@@ -48,6 +48,7 @@
             this.chkInchToMeter = new System.Windows.Forms.CheckBox();
             this.chkKiloToMiles = new System.Windows.Forms.CheckBox();
             this.btn4 = new System.Windows.Forms.Button();
+            this.btnBCT = new System.Windows.Forms.Button();
             this.grpTempConverter.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -272,11 +273,23 @@
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
+            // btnBCT
+            // 
+            this.btnBCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBCT.Location = new System.Drawing.Point(846, 340);
+            this.btnBCT.Name = "btnBCT";
+            this.btnBCT.Size = new System.Drawing.Size(82, 38);
+            this.btnBCT.TabIndex = 4;
+            this.btnBCT.Text = "GetFile";
+            this.btnBCT.UseVisualStyleBackColor = true;
+            this.btnBCT.Click += new System.EventHandler(this.btnBCT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 648);
+            this.Controls.Add(this.btnBCT);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.chkKiloToMiles);
             this.Controls.Add(this.chkInchToMeter);
@@ -326,6 +339,7 @@
         private System.Windows.Forms.CheckBox chkInchToMeter;
         private System.Windows.Forms.CheckBox chkKiloToMiles;
         private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btnBCT;
     }
 }
 
